@@ -1,0 +1,25 @@
+# Python environment and cache
+myenv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Model checkpoints and weights
+checkpoints/
+*.pt
+*.pth
+
+# Datasets and Outputs
+GeoSight_Consolidated_Dataset/
+GeoSight_Final_Prediction/
+visualizations/
+
+# Large file extensions
+*.tif
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE configurations
+.vscode/

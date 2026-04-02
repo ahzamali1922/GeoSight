@@ -1,0 +1,1 @@
+(Get-Content train.py -Raw) -replace ".*# Validation needs ToTensorV2.*val_transform\)", "    # Validation needs ToTensorV2 to format the data correctly for PyTorch (no spatial augmentations)`r`n    val_dataset = GeoSightDataset(IMG_DIR, MASK_DIR, filenames=val_files, transform=val_transform)" | Set-Content train.py
